@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Register </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+		<link rel="stylesheet" type="text/css" href="../static/styles.css">			
 	</head>
 	<body></br></br></br></br></br>
 		<div align="center">
@@ -13,7 +13,7 @@
 				<h1 class="word">Register</h1>
 			</div></br></br></br>
 			<h2 class="word">
-				<form action="{{ url_for('register') }}" method="post">
+				<form action="./index.html" method="post">
 				<div class="msg">{{ msg }}</div>
 					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
 					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
@@ -21,7 +21,7 @@
 					<input type="submit" class="btn" value="Sign Up"></br>
 				</form>
 			</h2>
-			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{ url_for('login') }}"> Sign In here</a></p>
 		</div>
 		</div>
 	</body>
